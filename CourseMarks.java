@@ -45,6 +45,7 @@ public class CourseMarks{
             System.out.println("Enter the marks for the final exam:");
             finalExam = keyboard.nextDouble();
         }
+        keyboard.close();
     }
 
     /**Outputs the student record */
