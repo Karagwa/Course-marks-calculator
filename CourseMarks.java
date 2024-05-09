@@ -60,20 +60,14 @@ public class CourseMarks{
     }
 
     /**Converts quiz score to percentages */
-    private double normalizeQuizOne(){
+    private void normalizeQuizzes(){
         quizOne=quizOne*10;
-        return quizOne;
-    }
-
-    /**Converts quiz score to percentages */
-    private double normalizeQuizTwo(){
         quizTwo=quizTwo*10;
-        return quizTwo;
+    
     }
 
     public void calculateFinalScore(){
-        normalizeQuizOne();
-        normalizeQuizTwo();
+        normalizeQuizzes();
         double quizScore=((quizOne+quizTwo)/2)*0.25; //the total percentage contributed by the two quiz scores to the final score
         double midTermScore=midTermExam*0.25; //the percentage contributed by the mid term exam to the final score
         double finalExamScore=finalExam*0.5; //the percentage contributed by the final exam to the final score
